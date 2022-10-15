@@ -7,7 +7,13 @@
     <title>Dashboard</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:wght@400;500;600;700&family=Roboto&display=swap" 
+      rel="stylesheet">  
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
 </head>
 <body>
     <div class="dashboard">
@@ -46,17 +52,210 @@
                         <option value="ongoing"> Ongoing Project</option>
                         <option value="stalled"> Stalled Project</option>
                     </select>
-
                 </form>
+            </div>
+            
+            <div class="project_list">
+                <div class="project"> <!--Project1-->
+                    <div class="category"></div>
+                    <h2>Graphic Design</h2>
+                    <p>Active recently</p>
+
+                    <ul class="activity">
+                        <li>Comming soon banner</li>
+                        <li>Book cover</li>
+                    </ul>
+
+                    <div class="meta">
+                        <div class="contributors">
+                            <img src="assets/img/1.jpg" alt="">
+                            <img src="assets/img/2.jpg" alt="">
+                            <img src="assets/img/3.jpg" alt="">
+                        </div>
+                        <span class="material-icons-outlined"> more_vert </span>
+
+                    </div>
+
+                </div> <!--Project1 End -->
+
+                <div class="project"> <!--Project2-->
+                    <div class="category"></div>
+                    <h2>Magazine</h2>
+                    <p>1 hour ago</p>
+
+                    <ul class="activity">
+                        <li>Editorial Page content</li>
+                    </ul>
+
+                    <div class="meta">
+                        <div class="contributors">
+                            <img src="assets/img/4.jpg" alt="">
+                            <img src="assets/img/5.jpg" alt="">
+                        </div>
+                        <span class="material-icons-outlined"> more_vert </span>
+
+                    </div>
+
+                </div> <!--Project2 End -->
+
+                <div class="project"> <!--Project3-->
+                    <div class="category"></div>
+                    <h2>Leyouting</h2>
+                    <p>1 day ago</p>
+                    
+                    <ul class="activity">
+                        <li>Fix layout on page ads</li>
+                    </ul>
+
+                    <div class="meta">
+                        <div class="contributors">
+                            <img src="assets/img/6.jpg" alt="">
+                        </div>
+                        <span class="material-icons-outlined"> more_vert </span>
+
+                    </div>
+
+                </div> <!--Project3 End -->
+
+                <div class="project"> <!--Project4-->
+                    <div class="category"></div>
+                    <h2>Branding</h2>
+                    <p>3 days ago</p>
+                    
+                    <ul class="activity">
+                        <li>Brainstorm shape</li>
+                    </ul>
+
+                    <div class="meta">
+                        <div class="contributors">
+                            <img src="assets/img/1.jpg" alt="">
+                        </div>
+                        <span class="material-icons-outlined"> more_vert </span>
+
+                    </div>
+
+                </div> <!--Project4 End -->
+
+                <div class="project"> <!--Project5-->
+                    <div class="category"></div>
+                    <h2>Guidelines</h2>
+                    <p>5 days ago</p>
+                    
+                    <ul class="activity">
+                        <li>Make a brand guidelines
+                            for maked cosmetics </li>
+                    </ul>
+
+                    <div class="meta">
+                        <div class="contributors">
+                            <img src="assets/img/2.jpg" alt="">
+                            <img src="assets/img/3.jpg" alt="">
+                        </div>
+                        <span class="material-icons-outlined"> more_vert </span>
+
+                    </div>
+
+                </div> <!--Project5 End -->
+
+                <div class="project"> <!--Project6-->
+                    <div class="category"></div>
+                    <h2>Photoshoot</h2>
+                    <p>1 week ago</p>
+                    
+                    <ul class="activity">
+                        <li>Get the photo ready for magazine</li>
+                    </ul>
+
+                    <div class="meta">
+                        <div class="contributors">
+                            <img src="assets/img/4.jpg" alt="">
+                            <img src="assets/img/5.jpg" alt="">
+                            <img src="assets/img/6.jpg" alt="">
+                        </div>
+                        <span class="material-icons-outlined"> more_vert </span>
+
+                    </div>
+
+                </div> <!--Project6 End -->
+            </div>
+        </section>
+
+        <section class="secondary">
+            <div class="chart">
+                <h2>Total Project</h2>
+                <canvas id="myChart" width="400" height="400"></canvas>
+            </div>
+
+            <div class="recent_project">
+                <div class="listing">
+                    <div class="title">
+                        <div class="category">
+                        <h2>Layouting</h2>
+                        <p>by Chidozie Kachukwu</p>
+                        </div>
+                        <span class="material-icons-outlined">more_vert</span>
+                    </div>
+                </div>
+
+                <div class="listing">
+                    <div class="title">
+                        <div class="category">
+                        <h2>Photoshoot</h2>
+                        <p>by Musa Ismail</p>
+                        </div>
+                        <span class="material-icons-outlined">more_vert</span>
+                    </div>
+                </div>
+                
+                <div class="listing">
+                    <div class="title">
+                        <div class="category">
+                        <h2>Branding</h2>
+                        <p>by Ezequiel Arowolo</p>
+                        </div>
+                        <span class="material-icons-outlined">more_vert</span>
+                    </div>
+                </div>   
+                
+                <div class="listing">
+                    <div class="title">
+                        <div class="category">
+                        <h2>Graphic Design</h2>
+                        <p>by Mettew Kelechi</p>
+                        </div>
+                        <span class="material-icons-outlined">more_vert</span>
+                    </div>
+                </div>    
             </div>
             
         </section>
 
-        <section class="secondary">
-            
-        </section>
-
     </div>
+
+    <script>
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: [
+                'Completed',
+                'Ongoing',
+                'Stalled'
+            ],
+                datasets: [{
+                    label: 'My First Dataset',
+                    data: [300, 50, 100],
+                    backgroundColor: [
+                    'rgb(255, 99, 132)',
+                    'rgb(54, 162, 235)',
+                    'rgb(255, 205, 86)'
+                    ],
+                    hoverOffset: 4
+                }]
+            },
+            
+        });
+        </script>
     
 </body>
 </html>
