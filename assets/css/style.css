@@ -32,7 +32,6 @@ Navigation
     height: 50px;
     border-radius: 10px;
 }
-
 .dashboard .navigation div .material-icons-outlined{
     margin-left: 5px;
     margin-right: 5px;
@@ -40,19 +39,16 @@ Navigation
     color: #727272;
 }
 
-.dashboard .navigation div {
-    margin-top: 10px;
-}
 /* ==========
 Main Dashboard
 ============ */
 /* search */    
-
 .dashboard .main .search form {
-    margin-top: 50px;
     position: relative;
 }
-
+.dashboard .main .search{
+    margin-top: 40px;
+}
 .dashboard .main .search form input{
     width: 100%;
     font-size: 16px;
@@ -60,45 +56,50 @@ Main Dashboard
     border: 1px solid #dadada;
     background-color: rgba(0 0 0 / 0);
 }
-
 .dashboard .main .search form span{
     position: absolute;
     left: 15px;
     top: 10px; color: #727272;
 }
-
 .dashboard .main .search .notification{
    margin-top: 20px;
 }
 
 .dashboard .main .search .notification span:nth-child(1){
     margin-right: 15px;
+    position: relative;
+ }
+
+ .dashboard .main .search .notification span:nth-child(1)::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: sandybrown;
+    position: absolute;
+    border-radius: 50%;
+    top: 5px;
  }
 
  /* My Project */
  .dashboard .main .title{
     margin-bottom: 30px;
  }
-
  .dashboard .main .title h1{
     font-size: 35px;
     line-height: 0px;   
  }
- 
- .dashboard .main form{
+ .dashboard .main .title form{
     margin-top: 40px;
  }
-
- .dashboard .main form label{
+ .dashboard .main .title form label{
     margin-right: 15px;
     color: #727272;
     font-size: 16px;
  }
-
- .dashboard .main form select{
+ .dashboard .main .title form select{
     border: none;
     font-size: 16px;
-    background-color: rgba(0 0 0 / 0);
+    background-color: rgba(0 0 0 / .03);
  }
 
  /* Project List */
@@ -106,29 +107,25 @@ Main Dashboard
     font-size: 20px;
     line-height: 0;
  }
-
  .dashboard .main .project_list .project p{
     color: #727272;
  }
-
  .dashboard .main .project_list .project ul{
     list-style: none;
     position: relative;
     margin-left: 0px;
     padding-left: 0px;
  }
-
  .dashboard .main .project_list .project ul li{
     position: relative;
     color: #727272;
     margin-left: 15px;
  }
-
  .dashboard .main .project_list .project ul li::before {
     content: "\268A";
     position: absolute;
-    left: -15px;
-    top: -5px;
+    left: -20px;
+    top: 0px;
  }
  .dashboard .main .project_list .project .meta img {
     width: 50px;
@@ -177,7 +174,6 @@ Main Dashboard
 Secondary Statics
 ================ */
 /* Chart */
-
 .dashboard .secondary .chart .complete{
     text-align: center;
     margin: 40px 0px;
@@ -225,6 +221,16 @@ Secondary Statics
 Media Query 768px
 ================ */
 @media only screen and (min-width: 768px) {
+    /* Dashboard Search */
+    .dashboard .main .search{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+    .dashboard .main .search form{
+        margin-top: 10px;
+    }
    section.main .project_list{
     display: flex;
     flex-wrap: wrap;
